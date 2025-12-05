@@ -1,0 +1,13 @@
+<% layout('layout') %>
+
+<h1>EASY TAREFAS</h1>
+<p>Bem-vindo, <%= usuario.email %></p>
+
+<div id="app">
+  <input id="titulo" placeholder="Nova tarefa">
+  <button onclick="addTarefa()">Adicionar</button>
+
+  <ul id="lista"></ul>
+</div>
+
+<script src="/js/app.js"></script>

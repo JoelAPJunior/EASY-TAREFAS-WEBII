@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | EASY Tarefas</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="login-bg">
+
+  <div class="login-card">
+    <h2>EASY Tarefas</h2>
+  
+    <% if (typeof erro !== "undefined") { %>
+      <p class="erro"><%= erro %></p>
+    <% } %>
+
+    <form action="/login" method="POST">
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="senha" placeholder="Senha" required>
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+
+</body>
+</html>
